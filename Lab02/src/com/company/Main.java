@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        WordCount wc = new WordCount(3, 4);
+        WordLengthAverage wc = new WordLengthAverage(4, 3);
 
         wc.run();
     }

@@ -1,12 +1,10 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Mapper {
-    List<Pair<String, Integer>> words = new ArrayList<>();
+    Map<String, Tuple<Integer, Integer>> words= new HashMap<>();
 
     // Scale out instead of scale up to solve problems with huge amount of data
 
@@ -23,23 +21,32 @@ public class Mapper {
                     .replace(".", "")
                     .replace(",", "")
                     .toLowerCase();
-            //if(!words.stream().map(w->w.Key).collect(Collectors.toList()).contains(outputWord))
-            words.add(new Pair<>(outputWord, 1));
+            String firstChar = new String(new char[]{outputWord.charAt(0)});
+            if(this.words.containsKey(firstChar))
+            {
+                Tuple<Integer, Integer> existingPair = this.words.get(firstChar);
+                existingPair.x = existingPair.x + outputWord.length();
+                existingPair.y += 1;
+                this.words.put(firstChar, existingPair);
+            }
+            else this.words.put(firstChar, new Tuple<>(outputWord.length(), 1));
         }
     }
 
     public void sort(){
-        Collections.sort(words);
+        //Collections.sort(words);
     }
 
     public void print()
     {
-        for (Pair<String, Integer> p:words) {
-            System.out.println(String.format("< %s , %d >", p.Key, p.Value));
+        for (String key : words.keySet()) {
+            System.out.println(String.format("< %s , [%d , %d ] >", key, words.get(key).x, words.get(key).y));
         }
     }
 
-    List<Pair<String, Integer>> getOutput(){
-        return words;
+    List<Pair<String, Tuple<Integer, Integer>>> getOutput(){
+
+        return words.entrySet().stream().map(x->new Pair<>(x.getKey(), x.getValue()))
+                .collect(Collectors.toList());
     }
 }

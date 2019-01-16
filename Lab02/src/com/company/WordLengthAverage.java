@@ -8,11 +8,12 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class WordCount {
+public class WordLengthAverage {
+
     List<Mapper> mappers;
     List<Reducer> reducers;
 
-    public WordCount(int m, int r){
+    public WordLengthAverage(int m, int r){
         this.mappers = new ArrayList<>(m);
         this.reducers = new ArrayList<>(r);
 
@@ -31,6 +32,7 @@ public class WordCount {
 
 
     public void run() throws IOException {
+
 
         System.out.println(String.format("Number of Input-Splits: %d", this.mappers.size()));
         System.out.println(String.format("Number of Reducers: %d", this.reducers.size()));
@@ -55,34 +57,45 @@ public class WordCount {
             mapper.print();
         }
 
+
         for (int i = 0;i<this.mappers.size();i++) {
             Mapper mapper = this.mappers.get(i);
 
             for (int j = 0; j < this.reducers.size(); j++) {
                 int finalJ = j;
-                List<Pair<String, Integer>> reducerInput = mapper.getOutput().stream().filter(x->this.getPartition(x.Key) == finalJ)
+                List<Pair<String, Tuple<Integer, Integer>>> reducerInput = mapper.getOutput()
+                        .stream().filter(x->this.getPartition(x.Key) == finalJ)
                         .collect(Collectors.toList());
-
                 System.out.println(String.format("Pairs send from Mapper %s Reducer %s", i, j));
                 Collections.sort(reducerInput);
-                reducerInput.forEach(p->System.out.println(String.format("< %s , %s >", p.Key, p.Value)));
-
-                Reducer reducer = this.reducers.get(j);
-                reducer.groupPairs(reducerInput);
+                reducerInput.forEach(p->System.out.println(String.format("< %s , [ %d , %d ] >", p.Key, p.Value)));
             }
         }
 
-        for (int j = 0; j < this.reducers.size(); j++) {
-            Reducer reducer = this.reducers.get(j);
-            System.out.println(String.format("Reducer %d input", j));
-            reducer.printInput();
-        }
+        //for (int i = 0;i<this.mappers.size();i++) {
+        //    Mapper mapper = this.mappers.get(i);
 
-        for (int j = 0; j < this.reducers.size(); j++) {
-            Reducer reducer = this.reducers.get(j);
-            reducer.reduce();
-            System.out.println(String.format("Reducer %d output", j));
-            reducer.printOutput();
-        }
+            for (int j = 0; j < this.reducers.size(); j++) {
+                int finalJ = j;
+                List<Pair<String, Tuple<Integer, Integer>>> reducerInput =
+                        this.mappers.stream().flatMap(m->m.getOutput().stream())
+                        .collect(Collectors.toList())
+                        .stream().filter(x->this.getPartition(x.Key) == finalJ)
+                        .collect(Collectors.toList());
+
+                //System.out.println(String.format("Pairs send from Mapper %s Reducer %s", i, j));
+                //Collections.sort(reducerInput);
+                //reducerInput.forEach(p->System.out.println(String.format("< %s , %s >", p.Key, p.Value)));
+
+                Reducer reducer = this.reducers.get(j);
+                reducer.setInput(reducerInput);
+                reducer.groupPairs();
+                reducer.reduce();
+                System.out.println(String.format("Reducer %d output", j));
+                reducer.printOutput();
+            }
+        //}
+
     }
-}
+
+    }
