@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47e2cf83-9667-4d0f-bb03-1266f91cd9b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/W1D2_Part_A_Solution.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/InMapperWordCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/W1D2_Part_A_Solution.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/src/com/company/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/src/com/company/InMapperWordCount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab02/.idea/description.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab02/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab02/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab02/.idea/misc.xml" afterDir="false" />
@@ -45,10 +46,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="33" column="5" selection-start-line="10" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="88">
+              <caret line="659" column="7" lean-forward="true" selection-start-line="659" selection-start-column="7" selection-end-line="659" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/InMapperWordCount.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Reducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="946">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,34 +76,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/InMapperWordCount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Mapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Reducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="26" column="81" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="81" />
+            <state relative-caret-position="65">
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,10 +112,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Pair.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Reducer.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Mapper.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Reducer.java" />
         <option value="$PROJECT_DIR$/src/com/company/WordCount.java" />
+        <option value="$PROJECT_DIR$/src/com/company/InMapperWordCount.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Mapper.java" />
       </list>
     </option>
   </component>
@@ -136,21 +132,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Lab01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab01" type="462c0819:PsiDirectoryNode" />
+              <item name="Lab03_A" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab03_A" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Lab01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab01" type="462c0819:PsiDirectoryNode" />
+              <item name="Lab03_A" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab03_A" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Lab01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab01" type="462c0819:PsiDirectoryNode" />
+              <item name="Lab03_A" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab03_A" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -159,14 +156,14 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547585508220" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab03_A/src" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547707088120" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -208,17 +205,18 @@
       <option name="presentableId" value="Default" />
       <updated>1547496252603</updated>
       <workItem from="1547496258845" duration="6764000" />
-      <workItem from="1547706343596" duration="127000" />
+      <workItem from="1547617682959" duration="2496000" />
+      <workItem from="1547706545242" duration="572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6891000" />
+    <option name="totallyTimeSpent" value="9832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -237,7 +235,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -267,30 +265,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/testDataForW1D1.txt" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="5" selection-start-line="10" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="142">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Mapper.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/nio/file/Files.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="128">
+          <caret line="3240" column="18" lean-forward="true" selection-start-line="3240" selection-start-column="18" selection-end-line="3240" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Reducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="26" column="81" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="81" />
+        <state relative-caret-position="946">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -306,8 +302,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/InMapperWordCount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="88">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="659" column="7" lean-forward="true" selection-start-line="659" selection-start-column="7" selection-end-line="659" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/InMapperWordCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
